@@ -5,8 +5,7 @@ body{
   background-image: url(Image/header_background.jpg);
   background-repeat: no-repeat;
 }
-.container-fluid {
-}
+// Header
 .header {
   background-color: black;
   opacity: 0.6;
@@ -43,10 +42,33 @@ body{
       margin-left: 25px;
 		}
 }
-.container {
-}
-.content {
+// Header end
 
+// @media
+@media screen and (max-width: 320px) {
+   .header_ic-right{
+      display: none;
+   }
+   .header_map-icons{
+      display: none;
+   }
+   .header_text-center{
+      margin: 0 0 0 100px;
+   }
+   .header_number{
+      display: none;
+   }
+}
+@media screen and (max-width: 1366px) {
+   .header_vector-icons{
+      display: none;
+   }
+   
+}
+// @media end
+
+// Content
+.content {
 		&_text {
       margin-top: 140px;
 		}
@@ -60,6 +82,7 @@ body{
 		&_subtitle {
       font-size: 19px;
       line-height: 23px;
+      margin-top: 24px;
       color: white;
       letter-spacing: 2px;
 		}
@@ -67,11 +90,41 @@ body{
 .btn {
   width: 165px;
   height: 55px;
+  margin-top: 35px;
   border: 2px solid #C80000;
   box-sizing: border-box;
   border-radius: 27px;
   color: white;
 }
+// Content end
+
+// Icons
+.icons {
+   margin-top: 220px;
+		&_name {
+        text-align: center;
+		}
+
+		&_cen {
+         margin-left: 190px;
+		}
+
+		&_name-cen {
+         margin-left: 141px;
+		}
+		&_name-cen:first-child {
+         margin-left: 0;
+		}
+}
+// Icons end
+
+//@media  
+@media screen and (max-width: 320px) {
+   .icons_name{
+      display: none;
+   }
+}
+// @media end
 
 
 

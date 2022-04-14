@@ -51,6 +51,27 @@ body {
   margin-left: 25px;
 }
 
+@media screen and (max-width: 320px) {
+  .header_ic-right {
+    display: none;
+  }
+  .header_map-icons {
+    display: none;
+  }
+  .header_text-center {
+    margin: 0 0 0 100px;
+  }
+  .header_number {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .header_vector-icons {
+    display: none;
+  }
+}
+
 .content_text {
   margin-top: 140px;
 }
@@ -64,6 +85,7 @@ body {
 .content_subtitle {
   font-size: 19px;
   line-height: 23px;
+  margin-top: 24px;
   color: white;
   letter-spacing: 2px;
 }
@@ -71,10 +93,37 @@ body {
 .btn {
   width: 165px;
   height: 55px;
+  margin-top: 35px;
   border: 2px solid #C80000;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 27px;
   color: white;
+}
+
+.icons {
+  margin-top: 220px;
+}
+
+.icons_name {
+  text-align: center;
+}
+
+.icons_cen {
+  margin-left: 190px;
+}
+
+.icons_name-cen {
+  margin-left: 141px;
+}
+
+.icons_name-cen:first-child {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 320px) {
+  .icons_name {
+    display: none;
+  }
 }
 /*# sourceMappingURL=tuo_town.css.map */
