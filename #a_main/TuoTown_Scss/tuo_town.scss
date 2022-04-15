@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Inconsolata:wght@300&family=League+Spartan:wght@100;300;400&family=Lora:ital,wght@0,400;0,500;1,400&family=Montserrat&family=Noto+Sans&family=Open+Sans:wght@700&family=Oxygen:wght@400;700&family=Poppins:wght@200;300;500;600;700;800;900&family=Raleway:wght@100;200;300;400;600;700&family=Roboto+Slab:wght@100;200;300;400&family=Roboto:wght@100;400;500&family=Ubuntu:wght@400;500&display=swap');
 body{
   margin: 0;
   padding: 0;
   background-color: #373737;
   background-image: url(Image/header_background.jpg);
   background-repeat: no-repeat;
+}
+.main{
+   max-width: 1366px;
+   margin: 0 auto;
 }
 // Header
 .header {
@@ -59,6 +64,9 @@ body{
       display: none;
    }
 }
+@media screen and (max-width: 768px) {
+   
+}
 @media screen and (max-width: 1366px) {
    .header_vector-icons{
       display: none;
@@ -74,12 +82,14 @@ body{
 		}
 
 		&_text-title {
+      font-family: 'Montserrat', sans-serif;
       font-size: 41px;
       color: white;
       letter-spacing: 2px;
 		}
 
 		&_subtitle {
+      font-family: 'Montserrat', sans-serif;
       font-size: 19px;
       line-height: 23px;
       margin-top: 24px;
@@ -93,14 +103,17 @@ body{
   margin-top: 35px;
   border: 2px solid #C80000;
   box-sizing: border-box;
+  margin-bottom: 185px;
   border-radius: 27px;
   color: white;
 }
 // @media 
 @media screen and (max-width: 320px) {
    .content_text-title{
-      top: 100px;
+      margin-top: 100px;
+      text-transform: uppercase;
       font-size: 24px;
+      color: red;
    }
 }
 // @media end
@@ -135,7 +148,21 @@ body{
 }
 // @media end
 
+// Catalog
+.catalog-navbar {
+   display: flex;
+   justify-content: space-around;
+		&_image-icons {
+         display: flex;
+         justify-content: space-around;
+		}
 
+		&_title-icons {
+         display: flex;
+         justify-content: space-around;
+		}
+}
+// Catalog end
 
 
 
